@@ -15,7 +15,7 @@ int main()
     scanf("%d", &b);
     printf("Введите C: ");
     scanf("%d", &c);
-    if (a<b & b<c)
+    if (a<b && b<c)
         printf("Справедливо \n");
     else
         printf("Несправедливо \n");
