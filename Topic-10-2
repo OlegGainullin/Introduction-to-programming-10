@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    char *locale = setlocale(LC_ALL, "");
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int answer = 0;
+    printf("Введите A: ");
+    scanf("%d", &a);
+    printf("Введите B: ");
+    scanf("%d", &b);
+    printf("Введите C: ");
+    scanf("%d", &c);
+    if (a<b & b<c)
+        printf("Справедливо \n");
+    else
+        printf("Несправедливо \n");
+    return 0;
+}
