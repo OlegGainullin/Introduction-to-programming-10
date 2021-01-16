@@ -1,1 +1,17 @@
-
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    char *locale = setlocale(LC_ALL, "");
+    int a = 0;
+    int answer = 0;
+    printf("Введите число: ");
+    scanf("%d", &a);
+    if (a/100 > a/10%10 && a/10%10 > a%10 || a/100 < a/10%10 && a/10%10 < a%10)
+        printf("Справедливо \n");
+    else
+        printf("Несправедливо \n");
+    return 0;
+}
