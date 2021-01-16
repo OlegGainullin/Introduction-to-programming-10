@@ -12,7 +12,7 @@ int main()
     scanf("%d", &a);
     printf("Введите B: ");
     scanf("%d", &b);
-    if (a>2 & b <= 3)
+    if (a>2 && b <= 3)
         printf("Справедливо \n");
     else
         printf("Несправедливо \n");
